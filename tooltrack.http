@@ -1,0 +1,6 @@
+@tooltrack_HostAddress = http://localhost:5240
+
+GET {{tooltrack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
