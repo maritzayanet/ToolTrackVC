@@ -1,4 +1,3 @@
-
 name: ToolTrack CI
 
 on:
@@ -25,3 +24,6 @@ jobs:
 
       - name: Compilar proyecto
         run: dotnet build tooltrack.csproj --configuration Release --no-restore
+
+      - name: Construir imagen Docker
+        run: docker build -t tooltrack .
