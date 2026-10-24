@@ -3,9 +3,11 @@ using ToolTrack.Mappings;
 using ToolTrack.DTOs;
 using ToolTrack.Model;
 using ToolTrack.Services;
-
+using Microsoft.AspNetCore.Authorization;
 namespace ToolTrack2.Controllers;
 
+
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class ToolsController : ControllerBase
