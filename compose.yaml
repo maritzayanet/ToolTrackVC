@@ -1,7 +1,7 @@
 
 services:
   tooltrack:
-    build: .
+    image: ghcr.io/maritzayanet/tooltrack:latest
     container_name: tooltrack-api
     ports:
       - "8080:8080"
